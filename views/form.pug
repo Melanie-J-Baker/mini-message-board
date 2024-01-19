@@ -1,0 +1,10 @@
+extends layout 
+
+block content
+    h1= title
+        main
+        form(action="/new" method="post") 
+            p Add your comment below
+            input(type="text" name="user" id="name" placeholder="Enter name" required) 
+            textarea(name="text" cols="60" rows="10" placeholder="Add your comment here..." required)
+            button(type="submit") Submit Comment
